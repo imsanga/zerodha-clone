@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,44 +7,48 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div>
-          <img src="./images/zdlogo.png" alt="zerodhalogo" width="150" />
+    <nav>
+      <div class="container">
+        <div class="navContainer">
+          <div>
+            <a href="#navigate"
+              ><img src="./images/zdlogo.png" alt="zerodhalogo" width="150"
+            /></a>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#signup">Signup</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#support">Support</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <ul>
-            <li><a href="#signup">Signup</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#support">Support</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <section class="container">
-      <section>
-        <div class="sec1">
+      </div>
+    </nav>
+    <main id="navigate">
+      <section class="container">
+        <div class="section1">
           <img src="./images/zd1.png" alt="zerodastockimage1" />
           <h1>Invest in everything</h1>
           <h5>
             Online platform to invest in stocks, derivatives, mutual funds, and
             more
           </h5>
-          <button>Sign up now</button>
+          <a href="#navigate"><button>Sign up now</button></a>
         </div>
       </section>
-      <section>
-        <div class="sec2">
+      <section class="container">
+        <div class="section2">
           <img src="./images/zd2.png" alt="zerodastockimage2" />
-          <div class="fright">
+          <div class="floatright">
             <h1>Largest stock broker in India</h1>
             <h5>
-              1+ Crore Zerodha clients contribute to over 15% of all retail
+              1.3+ Crore Zerodha clients contribute to over 15% of all retail
               order volumes in India daily by trading and investing in:
             </h5>
-            <div class="sec2sec1">
+            <div class="offerings">
               <div>
                 <ul>
                   <li>Futures and Options</li>
@@ -63,26 +67,46 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="sec3">
-          <div class="sec3sec1">
-            <h1>The Zerodha Universe</h1>
+      <section class="container">
+        <div class="section3">
+          <div>
+            <h1>Trust with confidence</h1>
+            <h2>Customer-first always</h2>
             <h5>
-              A whole ecosystem of modern investment apps <br />tailored to
-              specific needs, built from the ground up
+              That's why 1.3+ crore customers trust Zerodha with ₹3.5+ lakh
+              crores worth of equity investments.
+            </h5>
+            <h2>No spam or gimmicks</h2>
+            <h5>
+              No gimmicks, spam, "gamification", or annoying push notifications.
+              High quality apps that you use at your pace, the way you like.
+            </h5>
+            <h2>The Zerodha universe</h2>
+            <h5>
+              Not just an app, but a whole ecosystem. Our investments in 30+
+              fintech startups offer you tailored services specific to your
+              needs.
+            </h5>
+            <h2>Do better with money</h2>
+            <h5>
+              With initiatives like
+              <a href="#nudge">Nudge</a>
+              and
+              <a href="#killswitch">Kill Switch</a>, we don't just facilitate
+              transactions, but actively help you do better with your money.
             </h5>
           </div>
-          <div class="sec3img">
+          <div>
             <img src="./images/zd3.png" alt="zerodastockimage3" />
-          </div>
-          <div class="sec3link">
-            <span> Explore our products &rarr; </span> &nbsp; &nbsp;
-            <span> kite demo &rarr;</span>
+            <div class="sec3link">
+              <span> Explore our products &rarr; </span> &nbsp; &nbsp;
+              <span> kite demo &rarr;</span>
+            </div>
           </div>
         </div>
       </section>
-      <section class="secd">
-        <div class="sec4">
+      <section class="container">
+        <div class="section4">
           <div class="sec4sec1">
             <h1>Unbeatable pricing</h1>
             <h5>
@@ -92,19 +116,19 @@
             <p>See pricing &rarr;</p>
           </div>
           <div class="sec4sec2">
-            <div class="s4d1">
+            <div class="s4">
               <h1>₹0</h1>
               <h5>Free equity delivery and direct mutual funds</h5>
             </div>
-            <div class="s4d2">
+            <div class="s4">
               <h1>₹20</h1>
               <h5>Intraday and F&O</h5>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="sec5">
+      <section class="container">
+        <div class="section5">
           <div>
             <img src="./images/zd4.png" alt="zerodastockimage4" />
           </div>
@@ -123,71 +147,75 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="sec6">
-          <h1>Open a Zerodha account</h1>
-          <h5>
-            Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and
-            F&O trades.
-          </h5>
-          <button>Sign up now</button>
-        </div>
+      <section class="container section6">
+        <h1>Open a Zerodha account</h1>
+        <h5>
+          Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and
+          F&O trades.
+        </h5>
+        <a href="#navigate"><button>Sign up now</button></a>
       </section>
-    </section>
-    <footer>
-      <div class="fd">
-        <div class="d1">
-          <img
-            src="./images/zdlogo.png"
-            alt="zdlogo"
-            width="150"
-            style="cursor: pointer; margin-bottom: 10px"
-          />
-          <h3>
-            Cloned with <span class="ht">❤</span> by
-            <a
-              href="https://github.com/imsanga"
-              style="font-size: larger; color: #666"
-              target="_blank"
-              >Sanga</a
-            >
-          </h3>
+      <footer>
+        <div class="fd">
+          <div class="d1">
+            <a href="#navigate"
+              ><img
+                src="./images/zdlogo.png"
+                alt="zdlogo"
+                width="150"
+                style="cursor: pointer; margin-bottom: 10px"
+            /></a>
+            <h3>
+              Cloned with <span class="ht">❤</span> by
+              <a
+                href="https://github.com/imsanga"
+                style="font-size: larger; color: #666"
+                target="_blank"
+                >Sanga</a
+              >
+            </h3>
+          </div>
+          <div class="d2">
+            <ul>
+              <li class="navh">Company</li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Products">Products</a></li>
+              <li><a href="#Pricing">Pricing</a></li>
+              <li><a href="#ReferralProgramme">Referral programme</a></li>
+              <li><a href="#Careers">Careers</a></li>
+              <li><a href="#Zerodha.tech">Zerodha.tech</a></li>
+              <li><a href="#PressMedia">Press & media</a></li>
+              <li><a href="#ZerodhaCares">Zerodha Cares (CSR)</a></li>
+            </ul>
+          </div>
+          <div class="d3">
+            <ul>
+              <li class="navh">Support</li>
+              <li><a href="ContactUs">Contact us</a></li>
+              <li><a href="#Support portal">Support portal</a></li>
+              <li><a href="#Z-Connect blog">Z-Connect blog</a></li>
+              <li><a href="#List of charges">List of charges</a></li>
+              <li><a href="#Downloads&resources">Downloads & resources</a></li>
+              <li><a href="#Videos">Videos</a></li>
+              <li><a href="#MarketOverview">Market overview</a></li>
+              <li><a href="#complaint">How to file a complaint?</a></li>
+              <li>
+                <a href="StatusOfComplaints">Status of your complaints</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d4">
+            <ul>
+              <li class="navh">Account</li>
+              <li><a href="#Open an account">Open an account</a></li>
+              <li><a href="#Fund transfer">Fund transfer</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="d2">
-          <ul>
-            <li class="navh">Company</li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Products">Products</a></li>
-            <li><a href="#Pricing">Pricing</a></li>
-            <li><a href="#ReferralProgramme">Referral programme</a></li>
-            <li><a href="#Careers">Careers</a></li>
-            <li><a href="#Zerodha.tech">Zerodha.tech</a></li>
-            <li><a href="#PressMedia">Press & media</a></li>
-            <li><a href="#ZerodhaCares">Zerodha Cares (CSR)</a></li>
-          </ul>
+        <div>
+          <p>Zerodha Broking Ltd © 2010 - 2024. All rights reserved.</p>
         </div>
-        <div class="d3">
-          <ul>
-            <li class="navh">Support</li>
-            <li><a href="ContactUs">Contact us</a></li>
-            <li><a href="#Support portal">Support portal</a></li>
-            <li><a href="#Z-Connect blog">Z-Connect blog</a></li>
-            <li><a href="#List of charges">List of charges</a></li>
-            <li><a href="#Downloads&resources">Downloads & resources</a></li>
-            <li><a href="#Videos">Videos</a></li>
-            <li><a href="#MarketOverview">Market overview</a></li>
-            <li><a href="#complaint">How to file a complaint?</a></li>
-            <li><a href="StatusOfComplaints">Status of your complaints</a></li>
-          </ul>
-        </div>
-        <div class="d4">
-          <ul>
-            <li class="navh">Account</li>
-            <li><a href="#Open an account">Open an account</a></li>
-            <li><a href="#Fund transfer">Fund transfer</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </main>
   </body>
 </html>

@@ -3,80 +3,78 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-header {
-  top: 0;
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1100px;
+  max-width: 100%;
+  margin: auto;
+}
+nav {
   width: 100%;
-  z-index: 10;
+  z-index: 2;
   position: fixed;
   background-color: #fff;
   box-shadow: 2px 1px 2px #eee;
 }
-
-nav {
-  width: 1100px;
-  margin: auto;
-  max-width: 100%;
+.navContainer {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-
+nav img {
+  cursor: pointer;
+}
 nav ul {
   display: flex;
-  list-style-type: none;
 }
-
 nav ul li {
-  font-size: 1.1rem;
-  padding: 20px;
+  list-style-type: none;
+  margin: 5px;
+  font-weight: 500;
+  padding: 20px 20px 15px 20px;
 }
 nav ul li a {
-  text-decoration: none;
-  font-weight: 500;
   color: #666;
+  font-size: 1.06em;
 }
-
-nav li a:hover {
+nav ul li a:hover {
   color: #387ed1;
+  font-size: 1.1em;
+  transition: 0.3s;
 }
-
-.container {
-  max-width: 100%;
-  margin-top: 18vh;
-}
-
-.sec1 {
+/*****maincontent*****/
+/***section1***/
+.section1 {
   text-align: center;
-  width: 1100px;
-  max-width: 100%;
-  margin: auto;
+  position: relative;
+  top: 15vh;
+  padding-bottom: 120px;
 }
-
-.sec1 img {
+.section1 img {
   display: block;
-  max-width: 100%;
   margin-bottom: 60px;
   max-height: 45vh;
+  max-width: 100%;
   margin: auto;
 }
-
-.sec1 h1 {
+.section1 h1 {
   margin-top: 8vh;
-  font-size: 2.75rem;
+  font-size: 2.5em;
   line-height: 1.25;
-  font-weight: 540;
+  font-weight: 640;
 }
-.sec1 h5 {
-  font-size: 1.5rem;
-  margin-top: 10px;
+.section1 h5 {
+  font-size: 1.5em;
+  margin-top: 15px;
   margin-bottom: 20px;
   font-weight: 450;
 }
 button {
   display: block;
   margin: auto;
-  margin-top: 55px;
+  margin-top: 60px;
   background-color: #387ed1;
   color: #fff;
   border-radius: 3px;
@@ -87,74 +85,78 @@ button {
   font-weight: 500;
   cursor: pointer;
 }
-
-.sec2 {
-  width: 1100px;
-  max-width: 100%;
-  margin: auto;
+button:hover {
+  background-color: #666;
+  font-size: 1.3em;
+  transition: 0.3s;
 }
-.sec2 {
+/***section2***/
+.section2 {
   margin-top: 15vh;
   display: flex;
 }
-.sec2 img {
+.section2 img {
   display: block;
-  max-width: 35vw;
-  max-height: 40vh;
+  max-width: 100%;
+  height: 320px;
 }
-
-.fright {
-  margin-left: 7vw;
-  display: flex;
-  flex-direction: column;
+.floatright {
+  margin-left: 5vw;
 }
-.fright h1 {
+.floatright h1 {
   font-size: 2.75rem;
   line-height: 1.5;
   font-weight: 500;
   margin-bottom: 20px;
 }
-.fright h5 {
+.floatright h5 {
   font-size: 1.25rem;
   line-height: 1.8;
   margin-bottom: 15px;
   font-weight: 400;
 }
-.sec2sec1 {
+.offerings {
   display: flex;
   justify-content: space-between;
   font-size: 1.2rem;
   margin-top: 10px;
 }
-.sec2sec1 ul {
-  padding-left: 20px;
+.offerings ul {
   line-height: 1.9;
 }
-.sec3 {
-  text-align: center;
-  width: 1100px;
-  max-width: 100%;
-  margin: auto;
+/***section3***/
+.section3 {
+  display: flex;
+  justify-content: space-between;
   margin-top: 15vh;
 }
-.sec3sec1 h1 {
+.section3 img {
+  display: block;
+  padding: 5px;
+  width: 650px;
+  height: 525px;
+  margin-left: 50px;
+}
+.section3 h1 {
   font-size: 2.75rem;
-  line-height: 1.25;
-  font-weight: 540;
+  font-weight: 500;
+  margin-bottom: 40px;
 }
-.sec3sec1 h5 {
-  font-size: 1.5rem;
-  margin-top: 20px;
+.section3 h2 {
+  font-size: 1.35rem;
+  line-height: 0.2;
+  font-weight: 550;
   margin-bottom: 20px;
-  font-weight: 375;
 }
-.sec3img img {
-  max-width: 850px;
-  height: auto;
-  width: 100%;
+.section3 h5 {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-weight: 400;
 }
 .sec3link {
-  margin-top: 1.5vh;
+  margin-top: 7vh;
+  text-align: center;
 }
 .sec3link span {
   cursor: pointer;
@@ -164,19 +166,14 @@ button {
 .sec3link span:hover {
   color: #387ed1;
 }
-.secd {
-  padding: 0 20px 120px 20px;
-}
-.sec4 {
-  width: 1100px;
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;
+/***section4***/
+.section4 {
   margin-top: 15vh;
+  display: flex;
 }
 .sec4sec1 {
-  flex-basis: 39.3333333333%;
-  width: 39.3333333333%;
+  flex-basis: 39.3%;
+  width: 39.3%;
 }
 .sec4sec1 h1 {
   font-size: 2.75rem;
@@ -200,62 +197,60 @@ button {
 }
 .sec4sec2 {
   display: flex;
-  flex-basis: 30%;
-  margin-left: 5vw;
+
+  margin-left: 8vw;
 }
-.s4d1,
-.s4d2 {
+.s4 {
   border: 1px solid #ccc;
   padding: 0 25px;
-  min-height: 190px;
   margin-top: 3vh;
   width: 15vw;
-  height: 15vh;
+  height: 25vh;
+  max-height: min-content;
 }
-.s4d1 h1,
-.s4d2 h1 {
+.s4 h1 {
+  margin-top: 1vh;
   font-size: 2.75rem;
   line-height: 1.25;
   font-weight: 540;
   text-align: center;
 }
-.s4d1 h5,
-.s4d2 h5 {
+.s4 h5 {
   margin-top: 5vh;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.25;
   font-weight: 400;
   text-align: center;
 }
-.sec5 {
-  width: 1100px;
-  max-width: 100%;
-  margin: auto;
+/***section5***/
+.section5 {
   display: flex;
   justify-content: space-between;
+  margin-top: 15vh;
 }
-.sec5 img {
-  max-width: 25vw;
+.section5 img {
+  padding: 10px;
+  max-width: 40vw;
   max-height: 40vh;
 }
-.sec5 h4 {
+.section5 h4 {
   font-size: 2.1rem;
   line-height: 1.25;
   font-weight: 540;
 }
-.sec5 h5 {
+.section5 h5 {
   margin-top: 3vh;
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 15px;
   font-weight: 400;
 }
-.sec5 p {
+.section5 p {
   cursor: pointer;
   font-size: 1.3rem;
   font-weight: 600;
 }
-.sec5 p:hover {
+.section5 p:hover {
   color: #387ed1;
 }
 .sec5sec2 {
@@ -263,30 +258,32 @@ button {
   flex-basis: 50%;
   width: 50%;
 }
-.sec6 {
+/***section6***/
+.section6 {
   margin-top: 15vh;
   text-align: center;
 }
-.sec6 h1 {
+.section6 h1 {
   margin-top: 8vh;
   font-size: 2.75rem;
   line-height: 1.25;
   font-weight: 540;
 }
-.sec6 h5 {
+.section6 h5 {
   margin-top: 3vh;
   font-size: 1.3rem;
   line-height: 1.8;
   margin-bottom: 15px;
   font-weight: 400;
 }
-.sec6 button {
+.section6 button {
   margin-top: 5vh;
 }
+/***footer***/
 footer {
   background-color: #fafafb;
   padding: 30px 0 5px 0;
-  border-top: 1px solid #eee;
+  border-top: 2px solid #eee;
   margin-top: 10vh;
 }
 .fd {
@@ -321,4 +318,11 @@ footer {
 }
 .ht {
   color: crimson;
+}
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
+  border-top: 0.25px solid #eee;
+  padding: 5px;
+  margin-top: 2vh;
 }
